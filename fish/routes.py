@@ -48,12 +48,6 @@ def exception_handler(func):
   return _exception_handler
 
 
-@app.route('/', methods=['GET', 'POST'])
-def handle_health_check():
-  """Return response 200 for successful health check"""
-  return Response(status=200)
-
-
 @app.route("/user/<user_id>", methods=["GET"])
 @exception_handler
 def get_user(user_id):

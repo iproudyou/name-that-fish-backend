@@ -13,4 +13,4 @@ RUN pip3 install -r requirements.txt
 
 EXPOSE 8000
 
-CMD ["python3", "./app.py"]
+CMD ["waitress-serve", "--call", "app:create_app"]

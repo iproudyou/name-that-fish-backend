@@ -44,3 +44,4 @@ tensorflow-io-gcs-filesystem==0.24.0
 tf-estimator-nightly==2.8.0.dev2021122109
 urllib3==1.26.9
 uuid==1.30
+waitress==2.1.1
