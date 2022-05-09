@@ -1,16 +1,16 @@
 FROM python:3.8
 
-WORKDIR /app
+WORKDIR /app/backend
 
-ENV PYTHONPATH=$PYTHONPATH:/app/
+ENV PYTHONPATH=/app/
+
+COPY . .
 
 RUN apt-get update -y
 RUN apt-get install -y python3 python3-pip
 
-COPY . /app
-
 RUN pip3 install -r requirements.txt
 
-EXPOSE 5000
+EXPOSE 8000
 
-CMD gunicorn main:app
+CMD ["python3", "./app.py"]
