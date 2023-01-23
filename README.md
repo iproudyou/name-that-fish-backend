@@ -6,7 +6,7 @@
 
 1. create a virtual environment via
 ```
-$ python3 venv -m "name-that-fish-backend"
+$ python3 -m venv "name-that-fish-backend"
 ```
 
 2. activate the virtual environment
