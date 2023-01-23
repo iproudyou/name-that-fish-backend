@@ -4,15 +4,23 @@
 
 ## Starting the app
 
-1. go into a virtual environment
+1. create a virtual environment via
+```
+$ python3 venv -m "name-that-fish-backend"
+```
 
-2. from the root folder, download required packages via
+2. activate the virtual environment
+```
+$ source $PATH_TO_YOUR_VENV/bin/activate
+```
+
+3. download required packages via
 
 ```
 $ pip install -r requirements.txt
 ```
 
-3. type in the following command in the command prompt
+4. type in the following command in the command prompt
 
 ```
 $ export PYTHONPATH=$PYTHONPATH:/Users/iproudyou/Documents/github.com/NameThatFish
@@ -20,7 +28,7 @@ $ export PYTHONPATH=$PYTHONPATH:/Users/iproudyou/Documents/github.com/NameThatFi
 
 Modify the first part of the path according to your device
 
-4. initiate the flask application via
+5. initiate the flask application via
 
 ```
 $ python3 app.py
