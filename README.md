@@ -17,7 +17,7 @@ $ source $PATH_TO_YOUR_VENV/bin/activate
 3. download required packages via
 
 ```
-$ pip install -r requirements.txt
+$ pip3 install -r requirements.txt
 ```
 
 4. type in the following command in the command prompt
